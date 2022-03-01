@@ -1,0 +1,22 @@
+---json
+{
+    "title": "Blogs"
+}
+---
+
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">ZBlog - {{ title }}</h1>
+            <p class="lead mb-0">Unleash your creative writer.</p>
+        </header>
+        <div class="py-5">
+            <p class="lead">Here are some of our blogs:</p>
+            <ul>
+                {% for article in collections.articles %}
+                    <li><a href="{{ article.url }}">{{ article.data.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

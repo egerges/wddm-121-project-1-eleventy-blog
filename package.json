@@ -1,0 +1,15 @@
+{
+  "name": "-project-1---eleventy-blog",
+  "version": "1.0.0",
+  "description": "Project 1: Eleventy Blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --input=src --serve",
+    "build": "npx @11ty/eleventy --input=src"
+  },
+  "author": "Elio Gerges",
+  "license": "MIT",
+  "dependencies": {
+    "toml": "^3.0.0"
+  }
+}

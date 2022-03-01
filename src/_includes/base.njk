@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.html" %}
+    <title>
+        {{ site.name }}{% if title %} - {{ title }}{% endif %}
+    </title>
+</head>
+<body>
+    {% include "partials/header.html" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    {% include "partials/footer.html" %}
+    {% include "partials/scripts.html" %}
+</body>
+</html>

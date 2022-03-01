@@ -1,0 +1,16 @@
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="/404-not-found/"><i class="icon ion-social-instagram"></i></a>
+            <a href="/404-not-found/"><i class="icon ion-social-snapchat"></i></a>
+            <a href="/404-not-found/"><i class="icon ion-social-twitter"></i></a>
+            <a href="/404-not-found/"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+            {% for item in nav.items %}
+                <li class="list-inline-item"><a href="{{ item.url }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <p class="copyright">ZBlog Publisher &copy; {% year %}</p>
+    </footer>
+</div>
